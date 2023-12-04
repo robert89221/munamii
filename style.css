@@ -1,16 +1,57 @@
 
 * { font-family: cursive;
-    background-color: floralwhite; }
+    background-color: rgb(240, 228, 205); }
 
 header a
 {
   color:unset;
   text-decoration:none;
 }
-
 header a:hover
 {
   text-decoration:underline;
+}
+
+.grid-container
+{
+  display:grid;
+  grid-template-columns: 30vw 30vw 30vw;
+  justify-content:space-evenly;
+}
+
+.product-item
+{
+  background-color:floralwhite;
+  /* overflow:hidden; */
+  border-style:solid;
+  border-color:rgb(220, 200, 190);
+  border-radius:1vw;
+  border-width:0.2vw;
+  padding:0.5vw;
+  /* width:40vw; */
+  height:auto;
+  text-align:center;
+}
+.product-item button
+{
+  background-color:floralwhite;
+  /* border-style:solid; */
+  border-color:rgb(150, 150, 150);
+  border-radius:0.5vw;
+  border-width:0.2vw;
+  /* padding:0.5vw; */
+  width:10vw;
+  /* height:auto; */
+  /* text-align:center; */
+}
+.product-item button:hover
+{
+  background-color:rgb(235, 240, 255);
+}
+.product-item img
+{
+  width:100%;
+  height:fit-content;
 }
 
 footer a
