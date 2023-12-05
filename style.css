@@ -66,6 +66,37 @@ header a:hover
   border-radius:0.5vw;
 }
 
+.contact-form
+{
+  text-align:center;
+  padding-bottom: 2vw;
+}
+.contact-form input
+{
+  width:50vw;
+  margin: 0.5vw;
+  background-color: white;
+}
+.contact-form textarea
+{
+  width:50vw;
+  margin: 0.5vw;
+  background-color: white;
+  resize:none;
+}
+input#sub
+{
+  width:fit-content;
+  background-color:floralwhite;
+  /* border-style:solid; */
+  border-color:rgb(150, 150, 150);
+  border-radius:0.5vw;
+  border-width:0.2vw;
+  /* padding:0.5vw; */
+  /* height:auto; */
+  /* text-align:center; */
+}
+
 footer
 {
   text-align: center;
