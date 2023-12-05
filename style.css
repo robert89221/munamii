@@ -2,14 +2,25 @@
 * { font-family: cursive;
     background-color: rgb(240, 228, 205); }
 
+header
+{
+  text-align: center;
+}
+header img
+{
+  width:10vw;
+}
 header a
 {
-  color:unset;
+  font-size: 2vw;
+  margin:1vw;
+  color:rgb(117, 44, 44);
+  background-color:unset;
   text-decoration:none;
 }
 header a:hover
 {
-  text-decoration:underline;
+  color:white;
 }
 
 .grid-container
@@ -52,15 +63,18 @@ header a:hover
 {
   width:100%;
   height:fit-content;
+  border-radius:0.5vw;
 }
 
+footer
+{
+  text-align: center;
+}
+footer img
+{
+  width:4vw;
+}
 footer a
 {
-  color:unset;
-  text-decoration:none;
-}
-
-footer a:hover
-{
-  text-decoration:underline;
+  margin:2vw;
 }
