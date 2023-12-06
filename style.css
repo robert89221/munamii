@@ -12,12 +12,12 @@ header
 }
 header img
 {
-  width:10vw;
+  width:15vw;
 }
 header a
 {
-  font-size: 2.5vw;
-  margin:1vw;
+  font-size: 4vw;
+  margin:2vw;
   color:rgb(117, 44, 44);
   background-color:unset;
   text-decoration:none;
@@ -26,6 +26,31 @@ header a:hover
 {
   color:white;
 }
+/*  för tablet  */
+@media only screen and (min-width: 800px)
+{
+  header img
+  {
+    width:13vw;
+  }
+  header a
+  {
+    font-size:3vw;
+  }
+}
+/*  för desktop  */
+@media only screen and (min-width: 1024px) and (orientation: landscape)
+{
+  header img
+  {
+    width:10vw;
+  }
+  header a
+  {
+    font-size:2vw;
+  }
+}
+
 
 #section-welcome
 {
@@ -34,10 +59,27 @@ header a:hover
 .welcome
 {
   display:flex;
+  flex-direction:column; /*row*/
   align-items:center;
   /* text-justify: center; */
   /* justify-content: center; */
   /* margin:1vw; */
+}
+/*  för tablet  */
+@media only screen and (min-width: 800px)
+{
+  .welcome
+  {
+    flex-direction:row;
+  }
+}
+/*  för desktop  */
+@media only screen and (min-width: 1024px) and (orientation: landscape)
+{
+  .welcome
+  {
+    flex-direction:row;
+  }
 }
 .welcome img
 {
@@ -70,12 +112,30 @@ header a:hover
   text-align:center;
 }
 
+
 .grid-container
 {
   display:grid;
-  grid-template-columns: 30vw 30vw 30vw;
+  grid-template-columns: 80vw;
   justify-content:space-evenly;
 }
+/*  för tablet  */
+@media only screen and (min-width: 800px)
+{
+  .grid-container
+  {
+    grid-template-columns: 40vw 40vw;
+  }
+}
+/*  för desktop  */
+@media only screen and (min-width: 1024px) and (orientation: landscape)
+{
+  .grid-container
+  {
+    grid-template-columns: 20vw 20vw 20vw 20vw;
+  }
+}
+
 
 .product-item
 {
@@ -121,16 +181,52 @@ header a:hover
 }
 .contact-form input
 {
-  width:50vw;
-  margin: 0.5vw;
+  width:70vw; /*50*/
+  margin: 1vw; /*0.5*/
   background-color: white;
+}
+/*  för tablet  */
+@media only screen and (min-width: 800px)
+{
+  .contact-form input
+  {
+    width:60vw;
+    margin:0.7vw;
+  }
+}
+/*  för desktop  */
+@media only screen and (min-width: 1024px) and (orientation: landscape)
+{
+  .contact-form input
+  {
+    width:50vw;
+    margin:0.5vw;
+  }
 }
 .contact-form textarea
 {
-  width:50vw;
-  margin: 0.5vw;
+  width:70vw; /*50*/
+  margin: 1vw; /*0.5*/
   background-color: white;
   resize:none;
+}
+/*  för tablet  */
+@media only screen and (min-width: 800px)
+{
+  .contact-form textarea
+  {
+    width:60vw;
+    margin:0.7vw;
+  }
+}
+/*  för desktop  */
+@media only screen and (min-width: 1024px) and (orientation: landscape)
+{
+  .contact-form textarea
+  {
+    width:50vw;
+    margin:0.5vw;
+  }
 }
 input#sub
 {
@@ -145,22 +241,56 @@ input#sub
   /* text-align:center; */
 }
 
+
 footer
 {
   background-color: rgb(220, 208, 185);
   text-align: center;
-  padding: 4vw;
+  padding: 5vw; /*4*/
 }
 footer img
 {
   background-color:unset;
-  width:4vw;
+  width:10vw; /*4*/
 }
 footer a
 {
   background-color:unset;
-  margin:2vw;
+  margin:5vw; /*2*/
 }
+/*  för tablet  */
+@media only screen and (min-width: 800px)
+{
+  footer
+  {
+    padding:4.5vw;
+  }
+  footer img
+  {
+    width:6vw;
+  }
+  footer a
+  {
+    margin:3vw;
+  }
+}
+/*  för desktop  */
+@media only screen and (min-width: 1024px) and (orientation: landscape)
+{
+  footer
+  {
+    padding:4vw;
+  }
+  footer img
+  {
+    width:4vw;
+  }
+  footer a
+  {
+    margin:2vw;
+  }
+}
+
 
 .footer-text
 {
